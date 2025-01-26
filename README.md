@@ -1,7 +1,6 @@
 # 2D-basicImplement
-![ezgif-3-bce1577204ed](https://github.com/user-attachments/assets/8afe7f27-6feb-4ef0-80f6-47ddc3fc88f9)
-![ezgif-2-31a7bcbaa844](https://github.com/user-attachments/assets/8c086fd3-38d6-4f48-afca-e2fd86e5c40c)
-![ezgif-6-c053731f03d2](https://github.com/user-attachments/assets/fa13f1d1-546a-4ea2-a597-1af0158eab1f)
+
+![螢幕擷取畫面 2025-01-26 211321](https://github.com/user-attachments/assets/33ff3765-2122-4d4a-9005-3c84fd04ae8e)
 
 ## Demo
 
@@ -9,6 +8,11 @@
 - [標準場景](https://davidhsu666.com/downloads/GameEngineT/engineDemo/gameshow1/)
 - [事件觸發器:上下坡時改變Zindex更換碰撞圖層](https://davidhsu666.com/downloads/GameEngineT/engineDemo/game2/)
 - [多邊形碰撞場景:可編輯多邊形及基本碰撞回饋](https://davidhsu666.com/downloads/GameEngineT/engineDemo/gameshow2/)
+
+![ezgif-3-bce1577204ed](https://github.com/user-attachments/assets/8afe7f27-6feb-4ef0-80f6-47ddc3fc88f9)
+![ezgif-2-31a7bcbaa844](https://github.com/user-attachments/assets/8c086fd3-38d6-4f48-afca-e2fd86e5c40c)
+![ezgif-6-c053731f03d2](https://github.com/user-attachments/assets/fa13f1d1-546a-4ea2-a597-1af0158eab1f)
+
 
 ## Run
 ```
