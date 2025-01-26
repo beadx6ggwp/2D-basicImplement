@@ -13,13 +13,13 @@ var assetSource = {
     imgs: {
         'player': '../asset/img/ani1.png',
         'player2': '../asset/img/ani2.png',
-        'tilecolor': '../asset/img/tilecolor.png',
         'coin': '../asset/img/coin.png',
         'robin': '../asset/img/robin.png',
         'swoosh': '../asset/img/swoosh.png',
-        'tileset': '../asset/img/tileset.png',
         'player3': '../asset/img/adventurer-v1.5-Sheet-new.png',
-        'Overworld': '../asset/tile/Overworld.png'
+        'testMap_Overworld':'../asset/map/testMap/testMap_Overworld.png',
+        'testMap_tilecolor':'../asset/map/testMap/testMap_tilecolor.png',
+        'defaultMap_tilecolor':'../asset/map/defaultMap/defaultMap_tilecolor.png',
         // 'imgtest1':'http://127.0.0.1:8080/'
         // 'ttt':'https://i.imgur.com/Ih4eMyv.gif',
         // 'ttt2':'https://i.imgur.com/ssZ6BcJ.gif'
@@ -28,13 +28,11 @@ var assetSource = {
 
     },
     jsons: {
-        'testJSON': '../asset/data/testJSON.json',
-        'untitled': '../asset/data/test2/untitled.json',
-        'tileset': '../asset/data/test2/tileset.json',
-        'tilecolor': '../asset/data/test2/tilecolor.json',
-        'map_2': '../asset/tile/map_2.json',
-        'Overworld': '../asset/tile/Overworld.json',
-        'BBtantest':'../asset/BBtantest/BBtantest.json'
+        'testMap':'../asset/map/testMap/testMap.json',
+        'testMap_Overworld':'../asset/map/testMap/testMap_Overworld.json',
+        'testMap_tilecolor':'../asset/map/testMap/testMap_tilecolor.json',
+        'defaultMap':'../asset/map/defaultMap/defaultMap.json',
+        'defaultMap_tilecolor':'../asset/map/defaultMap/defaultMap_tilecolor.json'
     }
 };
 
