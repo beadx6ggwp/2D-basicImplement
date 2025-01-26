@@ -200,7 +200,7 @@
  "tilesets":[
         {
          "firstgid":1,
-         "source":"tilecolor_defaultmap.json"
+         "source":"defaultMap_tilecolor.json"
         }],
  "tilewidth":32,
  "type":"map",

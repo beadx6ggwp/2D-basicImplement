@@ -19,7 +19,7 @@ var assetSource = {
         'player3': '../asset/img/adventurer-v1.5-Sheet-new.png',
         'testMap_Overworld':'../asset/map/testMap/testMap_Overworld.png',
         'testMap_tilecolor':'../asset/map/testMap/testMap_tilecolor.png',
-        'tilecolor_defaultmap':'../asset/map/defaultMap/tilecolor_defaultmap.png',
+        'defaultMap_tilecolor':'../asset/map/defaultMap/defaultMap_tilecolor.png',
         // 'imgtest1':'http://127.0.0.1:8080/'
         // 'ttt':'https://i.imgur.com/Ih4eMyv.gif',
         // 'ttt2':'https://i.imgur.com/ssZ6BcJ.gif'
@@ -32,7 +32,7 @@ var assetSource = {
         'testMap_Overworld':'../asset/map/testMap/testMap_Overworld.json',
         'testMap_tilecolor':'../asset/map/testMap/testMap_tilecolor.json',
         'defaultMap':'../asset/map/defaultMap/defaultMap.json',
-        'tilecolor_defaultmap':'../asset/map/defaultMap/tilecolor_defaultmap.json'
+        'defaultMap_tilecolor':'../asset/map/defaultMap/defaultMap_tilecolor.json'
     }
 };
 
