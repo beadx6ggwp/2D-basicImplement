@@ -1,7 +1,7 @@
 # 2D-basicImplement
 
 ## Demo
-
+操作方式: 上下左右、空白鍵衝刺、 Z 攻擊、X 遠程、T 開啟Debug、WASD移動視角、R 重製視角
 - [標準場景](https://davidhsu666.com/downloads/GameEngineT/engineDemo/gameshow1/)
 - [事件觸發器:上下坡時改變Zindex更換碰撞圖層](https://davidhsu666.com/downloads/GameEngineT/engineDemo/game2/)
 - [多邊形碰撞場景:可編輯多邊形及基本碰撞回饋](https://davidhsu666.com/downloads/GameEngineT/engineDemo/gameshow2/)
@@ -16,7 +16,7 @@ open 127.0.0.1:8080/src
 
 ## Main Features
 
-- 攝影機：支持視角追蹤、WASD控制和顯示範圍內對象的渲染
+- 攝影機：支持視角追蹤、WASD控制視角並顯示範圍內的物體
 - 動態碰撞盒：使用分離軸定理處理多邊形與圓形的碰撞檢測與回饋
 - 事件觸發器：設定物體碰撞後該處發的事件(處理上下坡、速度變更和對話區域等地圖事件)
 - 自訂地圖存取：通過編輯JSON文件生成地圖，支持圖層編輯和讀取多邊形碰撞體
