@@ -1,5 +1,21 @@
 # 2D-basicImplement
 
+## Run
+```
+num install http-server
+cd 2D-basicImplement
+http-server
+open 127.0.0.1:8080/src
+```
+
+## Main Features
+
+- 攝影機：支持視角追蹤、WASD控制和顯示範圍內對象的渲染
+- 動態碰撞盒：使用分離軸定理處理多邊形與圓形的碰撞檢測與回饋
+- 事件觸發器：設定物體碰撞後該處發的事件(處理上下坡、速度變更和對話區域等地圖事件)
+- 自訂地圖存取：通過編輯JSON文件生成地圖，支持圖層編輯和讀取多邊形碰撞體
+- Debug：顯示圖層和碰撞層，幫助測試和調試
+
 ## Map Edit
 
 Create map file:
