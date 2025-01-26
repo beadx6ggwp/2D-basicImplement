@@ -16,16 +16,18 @@ Create tileset:
 
 Edit map:
 
-在Layers區域 每個圖層以Group包起來 zindex=層數*10 start from 0
+在Layers區域，每個圖層以Group包起來，zindex=Group層數*10 (start from 0)
+
+玩家預設zindex為15，會往下找最近的圖層做碰撞，所以預設就是兩層Group，Group1為地面、Group2為玩家層數及預設的地圖碰撞層
 
 使用以下結構編輯:
 ```
-Group 2
+Group 2 (zindex=10)
 -objectlayer
 -collision
 -tilelayer
 
-Group 1
+Group 1 (zindex=0)
 -objectlayer
 -collision
 -tilelayer
