@@ -41,14 +41,14 @@ Use mapFile:
 
 var assetSource = {
     imgs: {
-        'tilecolor_defaultmap':'../asset/map/defaultMap/tilecolor_defaultmap.png'
+        'defaultMap_tilecolor':'../asset/map/defaultMap/defaultMap_tilecolor.png'
     },
     sounds: {
 
     },
     jsons: {
         'defaultMap':'../asset/map/defaultMap/defaultMap.json',
-        'tilecolor_defaultmap':'../asset/map/defaultMap/tilecolor_defaultmap.json'
+        'defaultMap_tilecolor':'../asset/map/defaultMap/defaultMap_tilecolor.json'
     }
 };
 
