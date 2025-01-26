@@ -34,7 +34,7 @@ open 127.0.0.1:8080/src
 
 Create map file:
 
-1. open tiled-windows
+1. open [tiled-windows](https://github.com/mapeditor/tiled/releases/tag/v1.2.0)
 2. New map (地圖方向: orthogonal,圖層格式: CSV,圖塊繪製順序: 右下)
 3. Save as json file
 
