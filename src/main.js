@@ -35,7 +35,7 @@ function init() {
         render: draw
     }, gameConfig);
 
-    mapp = new TileMap2(world, asset.jsons['BBtantest'])
+    mapp = new TileMap2(world, asset.jsons['testMap']);
 
     world.tileMap = mapp;
 

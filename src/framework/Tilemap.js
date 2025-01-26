@@ -87,7 +87,7 @@ class TileMap2 {
                         let nowSet = -1;
                         // if(tileIndex>=57)debugger
                         for (let i = 0; i < this.firstgidList.length; i++) {
-                            debugger;
+                            // debugger;
                             if (tileIndex >= this.firstgidList[i]) nowSet = this.firstgidList[i];
                         }
                         // 歸位新圖片的取得索引,因為多張圖片的編號是連在一起的
