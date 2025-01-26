@@ -1,6 +1,10 @@
 # 2D-basicImplement
+![ezgif-3-bce1577204ed](https://github.com/user-attachments/assets/8afe7f27-6feb-4ef0-80f6-47ddc3fc88f9)
+![ezgif-2-31a7bcbaa844](https://github.com/user-attachments/assets/8c086fd3-38d6-4f48-afca-e2fd86e5c40c)
+![ezgif-6-c053731f03d2](https://github.com/user-attachments/assets/fa13f1d1-546a-4ea2-a597-1af0158eab1f)
 
 ## Demo
+
 操作方式: 上下左右、空白鍵衝刺、 Z 攻擊、X 遠程、T 開啟Debug、WASD移動視角、R 重製視角
 - [標準場景](https://davidhsu666.com/downloads/GameEngineT/engineDemo/gameshow1/)
 - [事件觸發器:上下坡時改變Zindex更換碰撞圖層](https://davidhsu666.com/downloads/GameEngineT/engineDemo/game2/)
