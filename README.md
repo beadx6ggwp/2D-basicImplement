@@ -16,9 +16,9 @@
 
 ## Run
 ```
-num install http-server
-cd 2D-basicImplement
-http-server
+$ num install http-server
+$ cd 2D-basicImplement
+$ http-server
 open 127.0.0.1:8080/src
 ```
 
