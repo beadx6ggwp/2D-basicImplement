@@ -75,7 +75,7 @@ class Entity {
             // console.log(ani)
             let image = asset.imgs[ani.imgName];
             this.sheet = new SpriteSheet(image, ani.frameWidth, ani.frameHeight);
-            this.animation = new Animation(this.sheet, ani.speed, ani.action['default'], ani.repeat);
+            this.animation = new Animation(this.sheet, ani);
             this.renderBox = new BoundingBox(0, 0, this.renderWidth, this.renderHeight);
         }
 

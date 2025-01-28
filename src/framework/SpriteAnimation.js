@@ -17,10 +17,10 @@ function SpriteSheet(imgData, frameWidth, frameHeight) {
         // calculate the number of frames in a row after the image loads
         this.framesPerRow = Math.floor(this.image.width / this.frameWidth);
     }
-
 }
-function Animation(spriteSheet, frameSpeedPerSecond, seqStr, repeat = true) {
+function Animation(spriteSheet, aniData) {
     this.spriteSheet = spriteSheet;
+    this.aniData = aniData;
 
     this.lastAnimationSequence = [];
     this.animationSequence = [];
@@ -28,12 +28,12 @@ function Animation(spriteSheet, frameSpeedPerSecond, seqStr, repeat = true) {
 
     this.lastTime = new Date().getTime();
     this.accumulator = 0;// ms
-    this.setSpeed(frameSpeedPerSecond);
+    this.setSpeed(aniData.speed);
 
     this.finish = false;
-    this.repeat = repeat;
+    this.repeat = (typeof aniData.repeat !== 'undefined') ? aniData.repeat : true
 
-    this.setStartEnd(seqStr);
+    this.setStartEnd(aniData.action['default']);
 }
 Animation.prototype.setSpeed = function (frameSpeedPerSecond) {
     this.frameSleep = frameSpeedPerSecond == 0 ? 0 : 1000 / frameSpeedPerSecond;
