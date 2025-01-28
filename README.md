@@ -25,7 +25,7 @@ open 127.0.0.1:8080/src
 ## Main Features
 
 - Sprite Animation : 自由的選擇動畫序列與間隔
-- 凸多邊形碰撞盒與碰撞優化 : 使用分離軸定理處理碰撞與回饋
+- 凸多邊形碰撞盒與碰撞優化 : 使用分離軸定理處理碰撞與回饋，及四叉樹提升檢測效率
 - 事件觸發器 : 設定物體碰撞後該處發的事件(處理上下坡、速度變更和對話區域等地圖事件)
 - Entity物件 : 集成物體所需的功能單元，透過多型與繼承，統一更新與管理狀態
 - 攝影機 : 支持視角追蹤、WASD控制視角並顯示範圍內的物體、顯示Debug狀態，幫助測試和調試
@@ -61,7 +61,7 @@ animation.setStartEnd(pAni['walk-right']);// 播放向右走的序列
 ![Alt text](image/sat1.gif)
 ![Alt text](image/sat2.gif)
 
-詳細實作有額外寫成筆記文章 參考:
+詳細實作額外寫成筆記文章 參考:
 - [遊戲中的碰撞檢測Collision Detection](https://davidhsu666.com/archives/gamecollisiondetection/)
 - [Vector reflection向量鏡射 基本的碰撞反彈回饋](https://davidhsu666.com/archives/math-for-game-vector-reflection/)
 
@@ -72,7 +72,7 @@ animation.setStartEnd(pAni['walk-right']);// 播放向右走的序列
 
 透過四叉樹空間劃分的方式，提升碰撞檢測的效率，從O(n^2)降到O(n logn)
 
-詳細實作有額外寫成筆記文章 參考:
+詳細實作額外寫成筆記文章 參考:
 - [碰撞檢測的優化-四叉樹(Quadtree)](https://davidhsu666.com/archives/quadtree_in_2d/)
 
 
@@ -132,7 +132,7 @@ Entity: {
     animation: { ... },     // spriteAnimation
     survivalMode : false,   // 是否消失
     survivalTime : -1,      // 設定存在時間，到期後由主循環移除
-    hitActionData :{ ... }  // 事件觸發器
+    hitActionData :{ ... }  // 事件觸發器，設定該物體要與誰發生碰撞反應
 }
 ```
 
