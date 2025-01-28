@@ -24,12 +24,12 @@ open 127.0.0.1:8080/src
 
 ## Main Features
 
-- Sprite Animation:自由的選擇動畫序列與間隔
-- 凸多邊形碰撞盒與碰撞優化：使用分離軸定理處理碰撞與回饋
-- 事件觸發器：設定物體碰撞後該處發的事件(處理上下坡、速度變更和對話區域等地圖事件)
-- Entity物件:集成物體所需的功能單元，透過多型與繼承，統一更新與管理狀態
-- 攝影機：支持視角追蹤、WASD控制視角並顯示範圍內的物體、顯示Debug狀態，幫助測試和調試
-- 自訂地圖存取：通過編輯JSON文件生成地圖，支持圖層編輯和讀取多邊形碰撞體
+- Sprite Animation : 自由的選擇動畫序列與間隔
+- 凸多邊形碰撞盒與碰撞優化 : 使用分離軸定理處理碰撞與回饋
+- 事件觸發器 : 設定物體碰撞後該處發的事件(處理上下坡、速度變更和對話區域等地圖事件)
+- Entity物件 : 集成物體所需的功能單元，透過多型與繼承，統一更新與管理狀態
+- 攝影機 : 支持視角追蹤、WASD控制視角並顯示範圍內的物體、顯示Debug狀態，幫助測試和調試
+- 自訂地圖存取 : 通過編輯JSON文件生成地圖，圖層編輯、讀取並生成多邊形碰撞體、地圖的物件動畫
 
 
 ## Sprite Animation
@@ -182,7 +182,8 @@ Create tileset:
 
 1. New Tileset(基於圖塊集圖像,No Embed in map)
 2. 來源: 選擇tile圖片
-3. Save as json file
+3. 編輯此tileset的動畫序列
+4. Save as json file
 
 Edit map:
 
@@ -225,3 +226,8 @@ var assetSource = {
 var map = new TileMap2(world, asset.jsons['defaultMap']);
 ```
 ![Alt text](image/mapEdit1.jpg)
+
+
+## 簡略的期望架構
+
+![Alt text](image/struct1.jpg)
