@@ -16,25 +16,27 @@
 
 ## Run
 ```
-$ num install http-server
 $ cd 2D-basicImplement
+$ npm install http-server
 $ http-server
 open 127.0.0.1:8080/src
 ```
 
 ## Main Features
 
-- 攝影機：支持視角追蹤、WASD控制視角並顯示範圍內的物體
+- Sprite Animation:自由的選擇動畫序列與間隔
+- Entity物件:集成物體所需的功能單元，透過多型與繼承，統一更新與管理狀態
+- Debug：顯示圖層和碰撞層，幫助測試和調試
 - 動態碰撞盒：使用分離軸定理處理多邊形與圓形的碰撞檢測與回饋
 - 事件觸發器：設定物體碰撞後該處發的事件(處理上下坡、速度變更和對話區域等地圖事件)
 - 自訂地圖存取：通過編輯JSON文件生成地圖，支持圖層編輯和讀取多邊形碰撞體
-- Debug：顯示圖層和碰撞層，幫助測試和調試
+- 攝影機：支持視角追蹤、WASD控制視角並顯示範圍內的物體
 
 ## Map Edit
 
 Create map file:
 
-1. open tiled-windows
+1. open [tiled-windows](https://github.com/mapeditor/tiled/releases/tag/v1.2.0)
 2. New map (地圖方向: orthogonal,圖層格式: CSV,圖塊繪製順序: 右下)
 3. Save as json file
 
@@ -42,7 +44,7 @@ Create tileset:
 
 1. New Tileset(基於圖塊集圖像,No Embed in map)
 2. 來源: 選擇tile圖片
-3. Save As json file
+3. Save as json file
 
 Edit map:
 
