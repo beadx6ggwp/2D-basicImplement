@@ -31,6 +31,33 @@ open 127.0.0.1:8080/src
 - 攝影機 : 支持視角追蹤、WASD控制視角並顯示範圍內的物體、顯示Debug狀態，幫助測試和調試
 - 自訂地圖存取 : 通過編輯JSON文件生成地圖，圖層編輯、讀取並生成多邊形碰撞體、地圖的物件動畫
 
+## Main loop
+
+透過fixed timestep製作主循環，確保每次邏輯更新的間隔一致，降低event呼叫時間不穩定影響
+
+```js
+while(running){
+    currentTime = timeNow;
+    timeDiff = currentTime -lastTime;
+    lastTime = currentTime;
+    accumulator += timeDiff
+
+    while(accumulator >= stepTime){
+        accumulator -= stepTime;
+        update(stepTime);
+    }
+    render(accumulator / stepTime);
+}
+```
+
+參考資源:
+- [Why use integration for a fixed timestep game loop?](https://stackoverflow.com/questions/43302268/why-use-integration-for-a-fixed-timestep-game-loop-gaffer-on-games)
+- [deWiTTERS Game Loop](https://dewitters.com/dewitters-gameloop/)
+- [Fix Your Timestep!](https://gafferongames.com/post/fix_your_timestep/)
+- [A Detailed Explanation of JavaScript Game Loops and Timing](https://www.isaacsukin.com/news/2015/01/detailed-explanation-javascript-game-loops-and-timing#fps-control)
+- [Game Programming Patterns:Game Loop](https://gameprogrammingpatterns.com/game-loop.html)
+- [在游戏编程中，如何设计游戏循环（Game Main Loop）？](https://www.zhihu.com/question/341271673)
+
 
 ## Sprite Animation
 
@@ -52,8 +79,8 @@ pAni = {
 };
 
 animation = new Animation(pSheet, pAni);
-animation.setStartEnd(pAni['default']);// 站著的靜止圖片
-animation.setStartEnd(pAni['walk-right']);// 播放向右走的序列
+animation.setStartEnd(pAni.action['default']);// 站著的靜止圖片
+animation.setStartEnd(pAni.action['walk-right']);// 播放向右走的序列
 ```
 ## 凸多邊形碰撞盒與碰撞優化
 
